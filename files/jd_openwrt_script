@@ -13,7 +13,7 @@ dir_file="/usr/share/jd_openwrt_script"
 start() {
 	clear
 	echo "-------------------------------------------"
-	echo -e "$green	    Instrall_script$white"
+	echo -e "$green	    jd_openwrt_script$white"
 	echo "-------------------------------------------"
 	echo -e "$yellow 本插件使用到的脚本$white"
 	echo "  1.https://github.com/ITdesk01/JD_Script"
@@ -118,10 +118,10 @@ Detect() {
 stop() {
 	clear
 	echo "------------------------------------------"
-	echo -e "$yellow 用于删除JD_Script checkjs AUCloudflareIP$white"
+	echo -e "$yellow 用于删除jd_openwrt_script$white"
 	echo "------------------------------------------"
 
-	echo -e "请先保存$green$dir_file/script_config$white，这个也会删除"
+	echo -e "请先保存$green$dir_file/script_config$white，这个也会删除，这个是cookie和其他文件"
 	echo ""
 	seconds_left=15
 	while [ ${seconds_left} -gt 0 ]; do
