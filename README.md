@@ -30,14 +30,14 @@ cd 到你的源码
         
         sh $jd 
       
-3.  扫码获取cooike
+3.扫码获取cooike
         
         node /usr/share/jd_openwrt_script/JD_Script/js/getJDCookie.js
         获取到的cookie填到 /usr/share/jd_openwrt_script/script_config/jdCookie.js
      
 4.运行全部脚本
 
-     sh $jd && sh $jd run_0 run_07
+        sh $jd && sh $jd run_0 run_07
 
 
 **如果安装失败可以用以下命令控制插件重新安装**
