@@ -33,7 +33,10 @@ start() {
 	if [ $? -eq 0 ];then
 		echo -e "$green 网络正常$white"
 	else
-		echo -e "$red 网络连接异常，休息5分钟再继续试$white"
+		echo -e "$red 网络连接异常，无法ping通github.com，休息5分钟插件再继续尝试下载脚本$white"
+		echo -e "$green 如果5分钟过去还是这样，你可以强制代理github.com ，或者采用底下代码手动安装，看看什么问题 $white"
+		echo -e "$green /etc/init.d/jd_openwrt_script stop $white"
+		echo -e "$green /etc/init.d/jd_openwrt_script start $white"
 		sleep 5m
 		start
 	fi
