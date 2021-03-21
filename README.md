@@ -51,4 +51,4 @@ cd 到你的源码
         /etc/init.d/jd_openwrt_script disable
       
 
-不会编译的可以采用我的编译辅助脚本编译： https://github.com/openwrtcompileshell/OpenwrtCompileScript（编译出来就是带插件的）
+不会编译的可以采用我的编译辅助脚本编译： https://github.com/openwrtcompileshell/OpenwrtCompileScript （编译出来就是带插件的）
