@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=jd_openwrt_script
 PKG_VERSION:=1
-PKG_RELEASE:=11
+PKG_RELEASE:=12
 #PKG_FLAGS:=nonshared
 
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
@@ -26,7 +26,6 @@ define Package/jd_openwrt_script/description
 Script Used
 	https://github.com/ITdesk01/JD_Script
 	https://github.com/ITdesk01/Checkjs
-	https://github.com/ITdesk01/AUCloudflareIP
 
 Dependent requirements
 	node >=10
