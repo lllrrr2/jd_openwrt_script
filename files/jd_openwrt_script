@@ -75,7 +75,7 @@ start() {
 	if [ -e curtinlv_jd ];then
 		echo -e "$green curtinlv_jd已存在$white"
 	else
-		git clone https://github.com/curtinlv/JD-Script.git && Detect
+		git clone https://github.com/curtinlv/JD-Script.git curtinlv_jd && Detect
 		chmod 755 curtinlv_jd/jd_OpenCard.py
 	fi
 	
