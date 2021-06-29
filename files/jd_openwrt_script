@@ -18,6 +18,7 @@ start() {
 	echo -e "$yellow 本插件使用到的脚本$white"
 	echo "  1.https://github.com/ITdesk01/JD_Script"
 	echo "  2.https://github.com/ITdesk01/Checkjs"
+	echo "  3.https://github.com/curtinlv/JD-Script.git"
 	echo ""
 	echo -e "$yellow 等安装完成以后可以用以下代码调用脚本$white"
 	echo -e "$green  sh \$jd $white      #调用JD_Script"
@@ -69,6 +70,13 @@ start() {
 		git clone https://github.com/ITdesk01/Checkjs.git && Detect
 		chmod 755 Checkjs/checkjs.sh
 		sh Checkjs/checkjs.sh system_variable
+	fi
+
+	if [ -e curtinlv_jd ];then
+		echo -e "$green curtinlv_jd已存在$white"
+	else
+		git clone https://github.com/curtinlv/JD-Script.git && Detect
+		chmod 755 curtinlv_jd/jd_OpenCard.py
 	fi
 	
 	#全局变量生效
